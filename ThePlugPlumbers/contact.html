@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us | The Plug Plumbers</title>
+  <meta name="description" content="Contact The Plug Plumbers. Phone, WhatsApp, email and service areas. Multiple locations in Johannesburg." />
+  <link rel="icon" href="images/favicon.png" />
+</head>
+<body>
+  <header>
+    <a href="index.html" aria-label="The Plug Plumbers home">
+      <img src="_images/ThePlugPlumbers.jpeg" alt="The Plug Plumbers logo" width="160" />
+    </a>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="booking.html">Book Online</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a>Contact</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Get in Touch</h1>
+    <p><strong>24/7 Emergencies:</strong> 011-123-4567 • <strong>WhatsApp:</strong> +27 71 234 5678 • <strong>Email:</strong> info@theplugplumbers.co.za</p>
+
+    <section aria-labelledby="locations">
+      <h2 id="locations">Our Locations</h2>
+      <ul>
+        <li>Johannesburg Central (Head Office)</li>
+        <li>Sandton Service Hub</li>
+        <li>Soweto Mobile Team</li>
+      </ul>
+
+      <!-- TODO: replace the map iframes with your real Google Map embeds -->
+      <h3>Maps</h3>
+      <iframe title="Johannesburg Central Map" src="https://www.google.com/maps?q=Johannesburg&output=embed" width="100%" height="250" loading="lazy"></iframe>
+      <iframe title="Sandton Map" src="https://www.google.com/maps?q=Sandton&output=embed" width="100%" height="250" loading="lazy"></iframe>
+    </section>
+
+    <section aria-labelledby="contact-form">
+      <h2 id="contact-form">Send a Message</h2>
+      <form action="#" method="post">
+        <label for="cname">Your Name</label><br />
+        <input id="cname" name="cname" type="text" required /><br /><br />
+
+        <label for="cemail">Email</label><br />
+        <input id="cemail" name="cemail" type="email" required /><br /><br />
+
+        <label for="cmessage">Message</label><br />
+        <textarea id="cmessage" name="cmessage" rows="6" required></textarea><br /><br />
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <!-- OPTIONAL: brand/story video -->
+    <!-- TODO: add your own file -->
+    <section aria-labelledby="brand-video">
+      <h2 id="brand-video">Our Story</h2>
+      <video controls width="100%" poster="images/video-poster.jpg">
+        <source src="_media/us.mp4" type="video/mp4" />
+      </video>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 The Plug Plumbers</p>
+  </footer>
+</body>
+</html>
