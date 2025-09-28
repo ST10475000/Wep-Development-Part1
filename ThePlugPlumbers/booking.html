@@ -4,15 +4,12 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Book Online | The Plug Plumbers</title>
-  <meta name="description" content="Book a plumbing service online. We confirm via email or WhatsApp." />
-  <link rel="icon" href="images/favicon.png" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <a href="index.html" aria-label="The Plug Plumbers home">
-      <img src="_images/ThePlugPlumbers.jpeg" alt="The Plug Plumbers logo" width="160" />
-    </a>
-    <nav aria-label="Primary">
+    <a href="index.html"><img src="_images/ThePlugPlumbers.jpeg" alt="Logo" width="160" /></a>
+    <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
@@ -25,66 +22,32 @@
     </nav>
   </header>
 
-  <main>
+  <main style="padding:40px 20px; max-width:600px; margin:auto;">
     <h1>Book a Service</h1>
-    <p>Fill in the form and we’ll confirm your booking via email or WhatsApp within business hours. For emergencies, call <strong>011-123-4567</strong>.</p>
+    <p>Fill out the form below to schedule your plumbing service. Our team will confirm within 24 hours.</p>
 
-    <!-- NOTE: For Part 1 this is static. Later you can wire it to email or a backend. -->
-    <form action="#" method="post" aria-describedby="booking-note">
-      <fieldset>
-        <legend>Your Details</legend>
-        <label for="fullName">Full Name</label><br />
-        <input id="fullName" name="fullName" type="text" required /><br /><br />
-
-        <label for="email">Email</label><br />
-        <input id="email" name="email" type="email" required /><br /><br />
-
-        <label for="phone">Phone / WhatsApp</label><br />
-        <input id="phone" name="phone" type="tel" required /><br /><br />
-      </fieldset>
-
-      <fieldset>
-        <legend>Service Details</legend>
-        <label for="service">Service Type</label><br />
-        <select id="service" name="service" required>
-          <option value="">Select a service</option>
+    <form style="background:#E7F1FF; padding:20px; border-radius:8px; display:flex; flex-direction:column; gap:15px;">
+      <label>Name:<input type="text" name="name" required /></label>
+      <label>Email:<input type="email" name="email" required /></label>
+      <label>Phone:<input type="tel" name="phone" required /></label>
+      <label>Service Needed:
+        <select name="service" required>
+          <option value="">Select</option>
           <option>Emergency Plumbing</option>
           <option>Leak Detection</option>
-          <option>Geyser Repair/Install</option>
-          <option>Bathroom/Kitchen Fittings</option>
+          <option>Geyser Installation/Repair</option>
           <option>Drain Cleaning</option>
           <option>Other</option>
-        </select><br /><br />
-
-        <label for="date">Preferred Date</label><br />
-        <input id="date" name="date" type="date" required /><br /><br />
-
-        <label for="time">Preferred Time</label><br />
-        <input id="time" name="time" type="time" required /><br /><br />
-
-        <label for="address">Service Address</label><br />
-        <input id="address" name="address" type="text" placeholder="Street, suburb, city" required /><br /><br />
-
-        <label for="notes">Additional Notes</label><br />
-        <textarea id="notes" name="notes" rows="5" placeholder="Describe the issue..."></textarea>
-      </fieldset>
-
-      <p id="booking-note"><em>We respect your privacy. Your details are used only to arrange your service.</em></p>
-      <button type="submit">Submit Booking</button>
+        </select>
+      </label>
+      <label>Preferred Date:<input type="date" name="date" required /></label>
+      <label>Additional Notes:<textarea name="notes"></textarea></label>
+      <button type="submit" style="background:#003366; color:white; padding:10px; border:none; border-radius:5px; cursor:pointer;">Submit Booking</button>
     </form>
-
-    <!-- OPTIONAL: booking explainer video -->
-    <!-- TODO: replace with your own file -->
-    <section>
-      <h2>How Booking Works</h2>
-      <video controls width="100%" poster="_media/howtobook.mp4">
-        <source src="_media/howtobook.mp4" type="video/mp4" />
-      </video>
-    </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 The Plug Plumbers</p>
+  <footer style="background:#003366; color:white; text-align:center; padding:20px;">
+    <p>&copy; 2025 The Plug Plumbers • Johannesburg</p>
   </footer>
 </body>
 </html>
